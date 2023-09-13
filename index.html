@@ -154,7 +154,8 @@ blockquote > #opsL{text-align:right;font-size:11px;font-weight:400;line-height:0
        <p id="kalimat">15 September 2023, mulai tanggal tersebut usiamu udah 21 tahun.
        <br>Hanya do'a terbaik yang dapat aku berikan kepadamu
        <br>Semoga kamu selalu diberi kesehatan, kebahagiaan dan kemudahan dalam segala urusan
-       <br>Tetep jaga kesehatan dan harus selalu semangat, aku di sini untukmu!
+       <br>Tetep jaga kesehatan dan harus selalu semangat
+	<br>ingat bahwa aku selalu di sini bersamamu
        <br>I love youuu, Sayanggg..</p>
        <p id="kalimatb">❤️ 🤍 🧡 💛 💚 💙 💜 🤎 </p>
      </blockquote></div>
@@ -167,7 +168,7 @@ blockquote > #opsL{text-align:right;font-size:11px;font-weight:400;line-height:0
 <!-- Jangan Edit Bagian Ini --><script>
   async function inipesan(){
     var { value: nama } = await swals.fire({
-           title: 'Masukin nama kamu dulu hihi', input: 'text',
+           title: 'Tulis nama kamu di sini dulu, yaa! hihi', input: 'text',
        });
        if(nama && nama.length < 11){
          window.nama = nama;
@@ -185,7 +186,7 @@ blockquote > #opsL{text-align:right;font-size:11px;font-weight:400;line-height:0
   var iniwarna2 = "Merah";
   
   var { isConfirmed: warna } = await swals.fire({
-  title: 'eh bentar, mau ngasih tau kalo foto di atas itu orang yang aku sayang!',
+  title: 'eh bentar, mau ngasih tau kalo foto di atas itu istriku di masa depan',
   text: 'lanjuuut! kamu mau pilih warna apa? harus dipilih loo 😆',
   imageUrl: '' + fotostiker3.src,
   showCancelButton: true,
@@ -206,7 +207,7 @@ if(warna2){
     await swals.fire({title: 'Okeyy!', text: 'Sekarang lihat ini, yangg 😄❤️', imageUrl: '' + fotostiker6.src,});
     mulainama();
   } else {
-    await swals.fire({title: 'Okeyy,  kamu pilih warna ' + iniwarna2 + ' yaa!', text: 'Sama aja sih sebenernya, tapi jalan-jalannya harus lebih lama 😍😍', imageUrl: '' + fotostiker7.src,});
+    await swals.fire({title: 'Okeyy,  kamu pilih warna ' + iniwarna2 + ' yaa!', text: 'Sama aja sih sebenernya, tapi jalan-jalannya harus lebih lama 😍', imageUrl: '' + fotostiker7.src,});
     mulainama();
 }
 //Selingan
@@ -221,7 +222,7 @@ if(warna2){
     cancelButtonText: 'Yakin',
 });
 if(warna2){    
-    await swals.fire({title: 'Okeyy, kamu pilih warna ' + iniwarna1 + ' yaa!', text: 'Sama aja sih sebenernya, tapi jalan-jalannya harus lebih lama 😍😍', imageUrl: '' + fotostiker7.src,});
+    await swals.fire({title: 'Okeyy, kamu pilih warna ' + iniwarna1 + ' yaa!', text: 'Sama aja sih sebenernya, tapi jalan-jalannya harus lebih lama 😍', imageUrl: '' + fotostiker7.src,});
     mulainama();
   } else {
     await swals.fire({title: 'Okeyy!', text: 'Sekarang lihat ini, yangg 😄❤️', imageUrl: '' + fotostiker6.src,});
